@@ -1,26 +1,15 @@
-/**
-* Template Name: PhotoFolio
-* Updated: Sep 18 2023 with Bootstrap v5.3.2
-* Template URL: https://bootstrapmade.com/photofolio-bootstrap-photography-website-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# Set main reusable colors and fonts using CSS variables
-# Learn more about CSS variables at https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
---------------------------------------------------------------*/
 /* Fonts */
 :root {
   --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-primary: "Inter", sans-serif;
-  --font-secondary: "Cardo", sans-serif;
+  --font-secondary: "Raleway", sans-serif;
 }
 
 /* Colors */
 :root {
   --color-default: #fafafa;
-  --color-primary: #27a776;
+  --color-primary: #049BE5;
   --color-secondary: #161718;
 }
 
@@ -44,7 +33,7 @@ a {
 }
 
 a:hover {
-  color: #32cf93;
+  color: #00AFF0;
   text-decoration: none;
 }
 
@@ -81,7 +70,7 @@ h6 {
   width: 120px;
   height: 1px;
   display: inline-block;
-  background: #5bd9a9;
+  background: #00AFF0;
   margin: 4px 10px;
 }
 
@@ -135,7 +124,7 @@ h6 {
 }
 
 .page-header .cta-btn:hover {
-  background: #2cbc85;
+  background: #00AFF0;
 }
 
 /*--------------------------------------------------------------
@@ -162,7 +151,7 @@ h6 {
 }
 
 .scroll-top:hover {
-  background: rgba(39, 167, 118, 0.8);
+  background: #00AFF0;
   color: #fff;
 }
 
@@ -332,7 +321,7 @@ h6 {
   display: inline-block;
   line-height: 0px;
   transition: 0.3s;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .header .header-social-links a:hover {
@@ -870,7 +859,7 @@ h6 {
 }
 
 .gallery-single .portfolio-info .btn-visit:hover {
-  background: #2cbc85;
+  background: #00AFF0;
 }
 
 .gallery-single .portfolio-description h2 {
@@ -1157,7 +1146,7 @@ h6 {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: rgba(39, 167, 118, 0.8);
+  background: #00AFF0;
 }
 
 @keyframes animate-loading {
@@ -1229,7 +1218,7 @@ h6 {
 }
 
 .hero .btn-get-started:hover {
-  background: #2cbc85;
+  background: #00AFF0;
 }
 
 @media (max-width: 768px) {
