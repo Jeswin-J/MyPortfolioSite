@@ -50,6 +50,10 @@ a {
   text-decoration: none;
 }
 
+.justify{
+  text-align: justify;
+}
+
 a:hover {
   color: #00AFF0;
   text-decoration: none;
