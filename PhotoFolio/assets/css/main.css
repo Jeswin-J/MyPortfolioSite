@@ -39,6 +39,32 @@
   scrollbar-color: #888 #ddd;
 }
 
+.card {
+  box-sizing: content-box;
+  padding: 30px;
+  margin: 30px 25px;
+  background: var(--color-secondary);
+  text-align: center;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.card p {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.card img {
+  max-height: 200px;
+  max-width: 200px;
+}
+
+@media (max-width: 1200px) {
+  .card {
+    padding: 15px;
+  }
+}
+
 body {
   font-family: var(--font-default);
   color: var(--color-default);
@@ -863,18 +889,18 @@ h6 {
 /*--------------------------------------------------------------
 # Gallery Single Section
 --------------------------------------------------------------*/
-.gallery-single .portfolio-details-slider img {
+.portfolio-details-slider img {
   width: 100%;
 }
 
-.gallery-single .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+.portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: rgba(255, 255, 255, 0.7);
   opacity: 1;
 }
 
-.gallery-single .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+.portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--color-primary);
 }
 
@@ -911,7 +937,7 @@ h6 {
   }
 }
 
-.gallery-single .portfolio-info h3 {
+.portfolio-info h3 {
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -920,7 +946,7 @@ h6 {
   font-family: var(--font-secondary);
 }
 
-.gallery-single .portfolio-info h3:after {
+.portfolio-info h3:after {
   content: "";
   position: absolute;
   display: block;
@@ -931,26 +957,26 @@ h6 {
   bottom: 0;
 }
 
-.gallery-single .portfolio-info ul {
+.portfolio-info ul {
   list-style: none;
   padding: 0;
   font-size: 15px;
 }
 
-.gallery-single .portfolio-info ul li {
+.portfolio-info ul li {
   display: flex;
   flex-direction: column;
   padding-bottom: 15px;
 }
 
-.gallery-single .portfolio-info ul strong {
+.portfolio-info ul strong {
   text-transform: uppercase;
   font-weight: 400;
   color: #6b7075;
   font-size: 14px;
 }
 
-.gallery-single .portfolio-info .btn-visit {
+.portfolio-info .btn-visit {
   padding: 8px 40px;
   background: var(--color-primary);
   color: #fff;
@@ -958,11 +984,11 @@ h6 {
   transition: 0.3s;
 }
 
-.gallery-single .portfolio-info .btn-visit:hover {
+.portfolio-info .btn-visit:hover {
   background: #00AFF0;
 }
 
-.gallery-single .portfolio-description h2 {
+.portfolio-description h2 {
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -970,11 +996,11 @@ h6 {
   font-family: var(--font-secondary);
 }
 
-.gallery-single .portfolio-description p {
+.portfolio-description p {
   padding: 0;
 }
 
-.gallery-single .portfolio-description .testimonial-item {
+.portfolio-description .testimonial-item {
   padding: 30px 30px 0 30px;
   position: relative;
   background: var(--color-secondary);
@@ -982,7 +1008,7 @@ h6 {
   margin-bottom: 50px;
 }
 
-.gallery-single .portfolio-description .testimonial-item .testimonial-img {
+.portfolio-description .testimonial-item .testimonial-img {
   width: 90px;
   border-radius: 50px;
   border: 6px solid #2e3133;
@@ -990,33 +1016,33 @@ h6 {
   margin: 0 10px 0 0;
 }
 
-.gallery-single .portfolio-description .testimonial-item h3 {
+.portfolio-description .testimonial-item h3 {
   font-size: 18px;
   font-weight: bold;
   margin: 15px 0 5px 0;
   padding-top: 20px;
 }
 
-.gallery-single .portfolio-description .testimonial-item h4 {
+.portfolio-description .testimonial-item h4 {
   font-size: 14px;
   color: rgba(255, 255, 255, 0.6);
   margin: 0;
 }
 
-.gallery-single .portfolio-description .testimonial-item .quote-icon-left,
-.gallery-single .portfolio-description .testimonial-item .quote-icon-right {
+.portfolio-description .testimonial-item .quote-icon-left,
+.portfolio-description .testimonial-item .quote-icon-right {
   color: #5bd9a9;
   font-size: 26px;
   line-height: 0;
 }
 
-.gallery-single .portfolio-description .testimonial-item .quote-icon-left {
+.portfolio-description .testimonial-item .quote-icon-left {
   display: inline-block;
   left: -5px;
   position: relative;
 }
 
-.gallery-single .portfolio-description .testimonial-item .quote-icon-right {
+.portfolio-description .testimonial-item .quote-icon-right {
   display: inline-block;
   right: -5px;
   position: relative;
@@ -1024,7 +1050,7 @@ h6 {
   transform: scale(-1, -1);
 }
 
-.gallery-single .portfolio-description .testimonial-item p {
+.portfolio-description .testimonial-item p {
   font-style: italic;
   margin: 0 0 15px 0 0 0;
   padding: 0;
