@@ -9,16 +9,14 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <!-- Favicons -->
   <link href="assets/img/letter-j.png" rel="icon">
   <link href="assets/img/letter-j.png" rel="apple-touch-icon">
 
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Raleway:wght@500&display=swap" rel="stylesheet">
-  <!-- Vendor CSS Files -->
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
   <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
@@ -26,15 +24,12 @@
   <link href="https://cdn.jsdelivr.net/npm/glightbox@3.2.0/dist/css/glightbox.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-
-  <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
 </head>
 
 <body>
 
-  <!-- ======= Header ======= -->
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid d-flex align-items-center justify-content-between">
 
@@ -86,7 +81,7 @@
           </li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
-      </nav><!-- .navbar -->
+      </nav>
 
       <div class="header-social-links">
         <a href="https://github.com/Jeswin-J" target = "_blank" class="github"><i class="bi bi-github"></i></a>
@@ -98,11 +93,11 @@
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
 
     </div>
-  </header><!-- End Header -->
+  </header>
 
   <main id="main" data-aos="fade" data-aos-delay="1500">
 
-    <!-- ======= End Page Header ======= -->
+    
     <div class="page-header d-flex align-items-center">
       <div class="container position-relative">
         <div class="row d-flex justify-content-center">
@@ -110,14 +105,14 @@
             <h2>About Me</h2>
             <p>As someone who values personal growth and meaningful connections, I'm always on the lookout for opportunities to expand my horizons and make a difference.</p>
 
-            <a class="cta-btn" href="contact.html">Download Resume</a>
+            <a class="cta-btn" href="#" onclick="downloadResume()">Download Resume</a>
 
           </div>
         </div>
       </div>
-    </div><!-- End Page Header -->
+    </div>
+    
 
-    <!-- ======= About Section ======= -->
     <section id="about" class="about">
       <div class="container">
 
@@ -153,22 +148,25 @@
             <p class="py-3" style = "text-align: justify">
               As a software developer, I'm not just about code. I'm a problem solver, an innovator, and a constant learner. I relish the challenge of finding elegant solutions to complex problems, and I'm always excited to explore new technologies and techniques to stay at the forefront of the ever-evolving tech landscape.  Whether you have a web project in mind, an app idea you're eager to bring to life, or a native desktop application that needs development, I'm here to collaborate and turn your vision into reality. Let's work together to create digital solutions that make a difference.
             </p>
-              
-          <a class="cta-btn" href="contact.html"> <i class="bi bi-people-fill"></i> collaborate</a>
+
+            <div class="col-lg-12 text-center">
+              <a class="btn" href="contact.html"> <i class="bi bi-people-fill"></i> collaborate</a>
+            </div>
+        
           </div>
         </div>
 
       </div>
-    </section><!-- End About Section -->
+    </section>
+    
 
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
+    <section id="resume" style="" class="resume">
       <div class="container">
 
         <div class="section-header">
           <h2>Resume</h2>
           <p>My Professional Journey</p>
-          <a class="cta-btn" href="contact.html"> <i class="bi bi-download"></i> Download PDF</a>
+          <a class="cta-btn" href="#." onclick="downloadResume()"> <i class="bi bi-download"></i> Download PDF</a>
         </div>
 
         <div class="row">
@@ -176,7 +174,7 @@
             <h3 class="resume-title">Summary</h3>
             <div class="resume-item pb-0">
               <h4>Jeswin Joseph J</h4>
-              <p><em>A highly driven and versatile software developer with a strong desire to create novel solutions. Seeking a challenging position where I can use my technical experience to create cutting-edge software, engage with dynamic teams, and contribute to the success of an innovative organization.</em></p>
+              <p style="text-align: justify;"><em>A highly driven and versatile software developer with a strong desire to create novel solutions. Seeking a challenging position where I can use my technical experience to create cutting-edge software, engage with dynamic teams, and contribute to the success of an innovative organization.</em></p>
               <ul>
                 <li>Chennai, India.</li>
                 <li>+91 63690 15407</li>
@@ -336,17 +334,16 @@
           </div>
         </div>
       </div>
-    </section><!-- End Resume Section -->
-  </main><!-- End #main -->
+    </section>
+  </main>
 
-  <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
     <div class="container">
       <div class="copyright">
         Developed by <strong><span>Jeswin Joseph J</span></strong>
       </div>
     </div>
-  </footer><!-- End Footer -->
+  </footer>
 
   <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
@@ -354,13 +351,23 @@
     <div class="line"></div>
   </div>
 
-  <!-- Vendor JS Files -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/js/glightbox.min.js" integrity="sha512-S/H9RQ6govCzeA7F9D0m8NGfsGf0/HjJEiLEfWGaMCjFzavo+DkRbYtZLSO+X6cZsIKQ6JvV/7Y9YMaYnSGnAA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-  <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+    function downloadResume() {
+      var resumePath = 'assets/Resume/Jeswin Joseph J.pdf';
+      var link = document.createElement('a');
+      link.href = resumePath;
+      link.download = 'Jeswin Joseph J.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+  </script>
 
 </body>
 
