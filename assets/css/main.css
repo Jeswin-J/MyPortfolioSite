@@ -43,6 +43,25 @@ font-family: var(--font-secondary);
   color: #757575;
 }
 
+@media (min-width: 499px) {
+  .header-social-links {
+    visibility: visible;
+  }
+  .navbar .header-social-links {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 500px) {
+  .header-social-links {
+    visibility: hidden;
+  }
+  .navbar .header-social-links {
+    visibility: visible;
+  }
+}
+
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -444,7 +463,6 @@ h6 {
   }
 
   .navbar ul {
-    margin: 0;
     padding: 0;
     display: flex;
     list-style: none;
