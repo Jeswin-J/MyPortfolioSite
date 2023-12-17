@@ -108,7 +108,7 @@
       <div class="container position-relative">
         <div class="row d-flex justify-content-center">
           <div class="col-lg-10 text-center">
-            <h2 class="text">Cloud Deployment Tool</h2>
+            <h2 class="text">Cloud Deployer</h2>
             <p>Featuring the OpenStack Cloud Deployment Tool</p>
 
             <a class="cta-btn" target = "_blank" href="https://github.com/Jeswin-J/OpenStack-Cloud-Deployer">View Source</a>
@@ -219,7 +219,7 @@
 
   <script>
     const phrases = [
-    'Cloud Deployment Tool',
+    'Cloud Deployer',
     ];
     
     
@@ -229,7 +229,7 @@
     let counter = 0;
     const next = () => {
         fx.setText(phrases[counter]).then(() => {
-        setTimeout(next, 8000);
+        setTimeout(next, 10000);
         });
         counter = (counter + 1) % phrases.length;
     };
