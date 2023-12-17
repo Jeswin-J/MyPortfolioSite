@@ -106,7 +106,7 @@
       <div class="container position-relative">
         <div class="row d-flex justify-content-center">
           <div class="col-lg-6 text-center">
-            <h2>Tic Tac Toe Game</h2>
+            <h2 class="text">Tic Tac Toe Game</h2>
             <p>Featuring the Tic Tac Toe Game</p>
 
             <a class="cta-btn" href="https://github.com/Jeswin-J/Tic-Tac-Toe-Game" target = "_blank">View Source</a>
@@ -198,6 +198,32 @@
 
   <!-- Template Main JS File -->
   <script src="../assets/js/main.js"></script>
+
+  <script src="../assets/js/textScramble.js"></script>
+
+  <script>
+    const phrases = [
+    'Tic Tac Toe Game',
+    ];
+    
+    
+    const el = document.querySelector('.text');
+    const fx = new TextScramble(el);
+    
+    let counter = 0;
+    const next = () => {
+        fx.setText(phrases[counter]).then(() => {
+        setTimeout(next, 8000);
+        });
+        counter = (counter + 1) % phrases.length;
+    };
+  </script>
+
+  <script>
+    document.getElementById("nil").addEventListener("click", () => {
+      document.getElementById('info-msg').style.visibility = "visible";
+    })
+  </script>
 
 </body>
 

@@ -106,10 +106,11 @@
       <div class="container position-relative">
         <div class="row d-flex justify-content-center">
           <div class="col-lg-6 text-center">
-            <h2>Bus Tracking System</h2>
+            <h2 class="text">Bus Tracking System</h2>
             <p>Featuring the Real-Time Bus Tracking System</p>
 
-            <a class="cta-btn" target = "_blank" href="https://github.com/Madhavakumar21/BusTrackingSystem_SIH">View Source</a>
+            <a class="cta-btn" id = "nil" href="#"><i class="bi bi-lock-fill"></i>&nbsp;View Source</a>
+            <p style = "visibility: hidden;" id = "info-msg"><sub><i class="bi bi-info-circle"></i>&nbsp;Source Code not available at this moment<sub></p>
 
           </div>
         </div>
@@ -232,6 +233,38 @@
 
   <!-- Template Main JS File -->
   <script src="../assets/js/main.js"></script>
+
+  <script>
+    document.getElementById("nil").addEventListener("click", () => {
+      document.getElementById('info-msg').style.visibility = "visible";
+    })
+  </script>
+
+  <script src="../assets/js/textScramble.js"></script>
+
+  <script>
+    const phrases = [
+    'Bus Tracking System',
+    ];
+    
+    
+    const el = document.querySelector('.text');
+    const fx = new TextScramble(el);
+    
+    let counter = 0;
+    const next = () => {
+        fx.setText(phrases[counter]).then(() => {
+        setTimeout(next, 8000);
+        });
+        counter = (counter + 1) % phrases.length;
+    };
+  </script>
+
+  <script>
+    document.getElementById("nil").addEventListener("click", () => {
+      document.getElementById('info-msg').style.visibility = "visible";
+    })
+  </script>
 
 </body>
 

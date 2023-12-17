@@ -110,7 +110,7 @@
             <h2>About Me</h2>
             <p>As someone who values personal growth and meaningful connections, I'm always on the lookout for opportunities to expand my horizons and make a difference.</p>
 
-            <a class="cta-btn" href="contact.html">Download Resume</a>
+            <a class="cta-btn" href="#" onclick="downloadResume()">Download Resume</a>
 
           </div>
         </div>
@@ -165,13 +165,13 @@
     </section><!-- End About Section -->
 
     <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
+    <section id="resume" style="" class="resume">
       <div class="container">
 
         <div class="section-header">
           <h2>Resume</h2>
           <p>My Professional Journey</p>
-          <a class="cta-btn" href="contact.html"> <i class="bi bi-download"></i> Download PDF</a>
+          <a class="cta-btn" href="#." onclick="downloadResume()"> <i class="bi bi-download"></i> Download PDF</a>
         </div>
 
         <div class="row">
@@ -179,7 +179,7 @@
             <h3 class="resume-title">Summary</h3>
             <div class="resume-item pb-0">
               <h4>Jeswin Joseph J</h4>
-              <p><em>A highly driven and versatile software developer with a strong desire to create novel solutions. Seeking a challenging position where I can use my technical experience to create cutting-edge software, engage with dynamic teams, and contribute to the success of an innovative organization.</em></p>
+              <p style="text-align: justify;"><em>A highly driven and versatile software developer with a strong desire to create novel solutions. Seeking a challenging position where I can use my technical experience to create cutting-edge software, engage with dynamic teams, and contribute to the success of an innovative organization.</em></p>
               <ul>
                 <li>Chennai, India.</li>
                 <li>+91 63690 15407</li>
@@ -364,6 +364,31 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+    function downloadResume() {
+      // Replace 'path/to/your/resume.pdf' with the actual path to your resume file
+      var resumePath = 'assets/Resume/Jeswin Joseph J.pdf';
+
+      // Create an anchor element
+      var link = document.createElement('a');
+
+      // Set the href attribute to a data URI
+      link.href = resumePath;
+
+      // Set the download attribute to specify the file name
+      link.download = 'Jeswin Joseph J.pdf';
+
+      // Append the link to the document body
+      document.body.appendChild(link);
+
+      // Trigger a click event on the link
+      link.click();
+
+      // Remove the link from the document body
+      document.body.removeChild(link);
+    }
+  </script>
 
 </body>
 

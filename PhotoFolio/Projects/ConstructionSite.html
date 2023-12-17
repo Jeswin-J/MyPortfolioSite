@@ -105,8 +105,8 @@
     <div class="page-header d-flex align-items-center">
       <div class="container position-relative">
         <div class="row d-flex justify-content-center">
-          <div class="col-lg-6 text-center">
-            <h2>Construction Site WebApp</h2>
+          <div class="col-lg-8 text-center">
+            <h2 class="text">Construction WebApp</h2>
             <p>Featuring the Construction Site WebApp</p>
 
             <a class="cta-btn"target = "_blank" href="https://github.com/Jeswin-J/ProTechBuilders-ConstructionSite">View Source</a>
@@ -230,6 +230,32 @@
 
   <!-- Template Main JS File -->
   <script src="../assets/js/main.js"></script>
+
+  <script src="../assets/js/textScramble.js"></script>
+
+  <script>
+    const phrases = [
+    'Construction WebApp',
+    ];
+    
+    
+    const el = document.querySelector('.text');
+    const fx = new TextScramble(el);
+    
+    let counter = 0;
+    const next = () => {
+        fx.setText(phrases[counter]).then(() => {
+        setTimeout(next, 8000);
+        });
+        counter = (counter + 1) % phrases.length;
+    };
+  </script>
+
+  <script>
+    document.getElementById("nil").addEventListener("click", () => {
+      document.getElementById('info-msg').style.visibility = "visible";
+    })
+  </script>
 
 </body>
 

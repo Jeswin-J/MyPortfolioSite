@@ -106,7 +106,7 @@
       <div class="container position-relative">
         <div class="row d-flex justify-content-center">
           <div class="col-lg-6 text-center">
-            <h2>E-Commerce Webpage</h2>
+            <h2 class="text">E-Commerce Webpage</h2>
             <p>Featuring a modern E-Commerce Webpage</p>
 
             <a class="cta-btn" href="https://ecommerce-red.netlify.app/" target="_blank">Live Demo</a>
@@ -191,6 +191,32 @@
 
   <!-- Template Main JS File -->
   <script src="../assets/js/main.js"></script>
+
+  <script src="../assets/js/textScramble.js"></script>
+
+  <script>
+    const phrases = [
+    'E-Commerce Webpage',
+    ];
+    
+    
+    const el = document.querySelector('.text');
+    const fx = new TextScramble(el);
+    
+    let counter = 0;
+    const next = () => {
+        fx.setText(phrases[counter]).then(() => {
+        setTimeout(next, 8000);
+        });
+        counter = (counter + 1) % phrases.length;
+    };
+  </script>
+
+  <script>
+    document.getElementById("nil").addEventListener("click", () => {
+      document.getElementById('info-msg').style.visibility = "visible";
+    })
+  </script>
 
 </body>
 

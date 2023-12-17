@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }, 1000);
       setTimeout(() => {
         preloader.remove();
+        next();
       }, 2000);
     });
   }

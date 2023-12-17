@@ -106,7 +106,7 @@
       <div class="container position-relative">
         <div class="row d-flex justify-content-center">
           <div class="col-lg-6 text-center">
-            <h2>Technoverse</h2>
+            <h2 class="text">Technoverse</h2>
             <p>Featuring Technoverse - an online learning platform</p>
 
             <a class="cta-btn" target = "_blank" href="https://www.linkedin.com/feed/update/urn:li:activity:7081298881656860672/">Live Demo</a>
@@ -224,6 +224,32 @@
 
   <!-- Template Main JS File -->
   <script src="../assets/js/main.js"></script>
+
+  <script src="../assets/js/textScramble.js"></script>
+
+  <script>
+    const phrases = [
+    'Technoverse',
+    ];
+    
+    
+    const el = document.querySelector('.text');
+    const fx = new TextScramble(el);
+    
+    let counter = 0;
+    const next = () => {
+        fx.setText(phrases[counter]).then(() => {
+        setTimeout(next, 8000);
+        });
+        counter = (counter + 1) % phrases.length;
+    };
+  </script>
+
+  <script>
+    document.getElementById("nil").addEventListener("click", () => {
+      document.getElementById('info-msg').style.visibility = "visible";
+    })
+  </script>
 
 </body>
 
