@@ -45,19 +45,22 @@ font-family: var(--font-secondary);
 
 @media (min-width: 499px) {
   .header-social-links {
-    visibility: visible;
+    display: block;
   }
   .navbar .header-social-links {
-    visibility: hidden;
+    display: none;
   }
 }
 
 @media (max-width: 500px) {
   .header-social-links {
-    visibility: hidden;
+    display: none;
   }
   .navbar .header-social-links {
-    visibility: visible;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -85,9 +88,18 @@ font-family: var(--font-secondary);
   margin-bottom: 0;
 }
 
-.card img {
-  max-height: 200px;
-  max-width: 200px;
+@media (min-width: 760px) {
+  .card img {
+    max-height: 200px;
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 759px) {
+  .card img {
+    max-height: 100px;
+    max-width: 100px;
+  }
 }
 
 @media (max-width: 1200px) {
